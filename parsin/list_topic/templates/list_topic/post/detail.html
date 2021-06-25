@@ -1,4 +1,8 @@
 {% extends "list_topic/base.html" %}
 {% block title %}{{ post.research_title }}{% endblock %}
-{% block content %} <h1>{{ post.research_title }}</h1>
-<p class="date"> Published {{ post.publish }} by {{ post.author }} </p> {{ post.Research_content|linebreaks }} {% endblock %}
+{% block content %} 
+<h1>{{ post.research_title }}</h1>
+<p class="date"> Published {{ post.publish }} by {{ post.author }} - visits: {{post.visits}}
+</p> 
+{{ post.Research_content|linebreaks }} 
+{% endblock %}

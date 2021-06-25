@@ -24,7 +24,9 @@ def post_detail(request, year, month, day, post):
             status='published',                                   
             publish__year=year,                                   
             publish__month=month,                                   
-            publish__day=day)    
+            publish__day=day)
+    post.visits = post.visits + 1
+    post.save()  
     return render(request,                  
     'list_topic/post/detail.html',                  
     {'post': post}) 

@@ -1,7 +1,8 @@
 {% extends "list_topic/base.html" %}
 {% block title %}My list_topic{% endblock %}
 {% block content %} 
-<h1>My list_topic</h1> 
+<h1> لیست تحقیقات</h1> 
+<hr>
 {% for post in posts %} 
 <h2>
     <a href="{{ post.get_absolute_url }}"> 
@@ -11,8 +12,8 @@
 <p class="date"> 
     Published {{ post.publish }} by {{ post.author }} 
 </p> 
-<hr>
 {{ post.Research_content|truncatewords:30|linebreaks }} 
+<h5> visits : <b> <i> {{post.visits}} </i> </b> </h5>
 <hr>
 <hr>
 {%endfor %} 

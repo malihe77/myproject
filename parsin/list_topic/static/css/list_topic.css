@@ -36,6 +36,7 @@ h2 {
 }
 
 p.date { 
+    direction: ltr;
     color:#ccc;
     font-family: georgia, serif;
     font-size: 12px;
