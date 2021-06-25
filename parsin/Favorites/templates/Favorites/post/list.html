@@ -1,0 +1,16 @@
+{% extends "Favorites/base.html" %}
+{% block title %} موضاعات برگزیده {% endblock %}
+{% block content %}
+<h1>موضاعات برگزیده</h1> 
+{% for post in posts %} 
+<h2> 
+    <a href="{{ Favorites.get_absolute_url }}"> 
+        {{ Favorites.research_title}} 
+    </a> 
+</h2>
+<p class="date"> 
+    Published {{ Favorites.publish }} by {{ Favorites.author }} 
+</p> 
+{{ Favorites.Research_content|truncatewords:30|linebreaks }} 
+{%endfor %} 
+{% endblock %}

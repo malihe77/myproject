@@ -19,4 +19,5 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('list_topic/', include('list_topic.urls', namespace='list_topic')), 
+    path('Favorites/', include('Favorites.urls', namespace='Favorites')), 
 ]
