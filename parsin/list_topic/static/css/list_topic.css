@@ -4,9 +4,9 @@ body {
     padding:0;
     font-family:helvetica, sans-serif; 
 }
-
+    
 a { 
-    color:#00abff;
+    color:#023853;
     text-decoration:none; 
 }
 
@@ -30,14 +30,14 @@ h2 {
 #sidebar { 
     float:right;
     width:30%;
-    padding:10px;
-    background:#efefef; 
+    padding:5px;
+    background:#f8d9d9; 
     height:100%;
 }
 
 p.date { 
     direction: ltr;
-    color:#ccc;
+    color:rgb(12, 12, 12);
     font-family: georgia, serif;
     font-size: 12px;
     font-style: italic; 
@@ -46,14 +46,14 @@ p.date {
 /* pagination */
 .pagination { 
     margin:40px 0; 
-    font-weight:bold;
+    font-weight: bolder;
 }
 
 /* forms */
 label { 
     float:left;
     clear:both;
-    color:#333;
+    color:rgb(51, 51, 51);
     margin-bottom:4px; 
 }
 input, textarea { 
